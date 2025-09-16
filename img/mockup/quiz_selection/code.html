@@ -1,0 +1,143 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #13a4ec;
+      }
+    </style>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body class="bg-slate-50" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 px-10 py-4 bg-white shadow-sm">
+<div class="flex items-center gap-10">
+<div class="flex items-center gap-3 text-slate-800">
+<svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z" fill="currentColor"></path>
+</svg>
+<h2 class="text-slate-900 text-xl font-bold leading-tight tracking-tight">GeoQuiz</h2>
+</div>
+<nav class="flex items-center gap-8">
+<a class="text-slate-600 hover:text-[var(--primary-color)] text-sm font-medium leading-normal transition-colors" href="#">Home</a>
+<a class="text-slate-600 hover:text-[var(--primary-color)] text-sm font-medium leading-normal transition-colors" href="#">Competitive</a>
+<a class="text-slate-600 hover:text-[var(--primary-color)] text-sm font-medium leading-normal transition-colors" href="#">Duel</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center rounded-full h-10 w-10 text-slate-500 hover:bg-slate-100 hover:text-slate-700 transition-colors">
+<span class="material-symbols-outlined"> search </span>
+</button>
+<button class="flex items-center justify-center rounded-full h-10 w-10 text-slate-500 hover:bg-slate-100 hover:text-slate-700 transition-colors">
+<span class="material-symbols-outlined"> settings </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAmzZ5Tn-FhlgfGUamdDNmzBvAWR1ozDB0CtY3eC-OQyoHNznZ5fSpkKmVRtKYozpCDE611IVVIDqQMF92a_sLmZd-qGeFL2sqkF8FHLb_kVbeOsrD6AL_I3nx4LrzMGIe2tPYSxz62bBmFk4pTuSRbjgKInBiUbXYt1ErDwpSa3KGAfxt-PrBD4hGjRIclBj6FFaXLWIEZW2bD3GX5eSFNsm_S6jLbD8zBWqSxNwDWfm9zTzTxrjbN0kkWzjZJEAB-tPuMUX4hAe8U");'></div>
+</div>
+</header>
+<main class="flex-1 px-10 py-8">
+<div class="max-w-6xl mx-auto">
+<div class="mb-12 text-center">
+<h1 class="text-5xl font-bold text-slate-900 mb-3 tracking-tighter">Geography Quizzes</h1>
+<p class="text-lg text-slate-500 max-w-2xl mx-auto">Explore a variety of geography quizzes to test your knowledge of the world. Pick a category and start your adventure!</p>
+</div>
+<div class="mb-12 max-w-lg mx-auto">
+<label class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"> search </span>
+<input class="form-input w-full min-w-0 resize-none overflow-hidden rounded-full text-slate-900 focus:outline-0 focus:ring-2 focus:ring-[var(--primary-color)] border border-slate-300 bg-white h-12 placeholder:text-slate-400 px-12 text-base" placeholder="Search for quizzes..." value=""/>
+</label>
+</div>
+<div class="mb-12">
+<h2 class="text-3xl font-bold text-slate-900 mb-6 tracking-tight">Categories</h2>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-8">
+<div class="group flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:shadow-lg hover:-translate-y-1 cursor-pointer">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuZUgkKuGsG8iMAISdkH-j3ADEZOc8EmKycXxzYB9koAZD7jTvvvhj56NjYHu11dJgf6pTrp_Qsvx_s4SMujfickZHAN_aesX5D7jhcn97Es6e4WbFrXKEFRME1qYbTNLM3R-qOEdXqdn3CX9VOQg0EQWB3FerMQc2tGYcqmSKqk37SKGAGxCxo5nEQACCfgF1bFZTnCLt5g_gOl2uvYKzmVuvrLJfz0BjL_KOMIe5cOStazcvsHsbXdrW5pJBO0MxAj6s8sIuOCO8");'></div>
+<div class="flex-1">
+<h3 class="text-xl font-bold text-slate-800 mb-1">World Capitals</h3>
+<p class="text-slate-500">Test your knowledge of capital cities around the globe.</p>
+</div>
+<button class="w-full h-10 px-4 rounded-md bg-[var(--primary-color)] text-white font-semibold text-sm transition-opacity opacity-0 group-hover:opacity-100">View Leaderboard</button>
+</div>
+<div class="group flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:shadow-lg hover:-translate-y-1 cursor-pointer">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmIgE3iGarYiH0S6F1-MHbNQrHTzeCLjhjoBQuQ2rp7SsjM3n3bBkthGcNtHnKd8kZojmluh_9NQk8RSAUvipDcudSdcSi8Khbu-7mA2xG6YE3UwpO7YPojmL0OLgRV5dBFRg0EMfUt8J8gO8-3DJhnGxkD80yNb9ZX2X3mWDkQcQ_PaQzWUEZT51BDvurWLMFTQv_9uk4OvQnXc-CqgZIp1uSqalH6GKhrT9Wy808qV8aYtQUmeqvrr1iu5vw4DgtWddH1XevxoxP");'></div>
+<div class="flex-1">
+<h3 class="text-xl font-bold text-slate-800 mb-1">Flags of the World</h3>
+<p class="text-slate-500">Identify flags from different countries.</p>
+</div>
+<button class="w-full h-10 px-4 rounded-md bg-[var(--primary-color)] text-white font-semibold text-sm transition-opacity opacity-0 group-hover:opacity-100">View Leaderboard</button>
+</div>
+<div class="group flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:shadow-lg hover:-translate-y-1 cursor-pointer">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBD67qJlFoVAD0HfiwzhyTXRmRE40B8ByLX3jcKEeVsj3ldbkeXq16TioBpErQbuDt2ttvu2nXxJ9QbQhTyeOKYfKebQX0ehhWOUNm0ks3IUBzg7spRZ2dotk2Zke7huPQBu55pRttfTPG1fDkfLmMUNX6s6PgxKeiNueX6dBN5UWdwapUfefR8sJo_60OWrzIQT8kbTKVbYswHR2iXkdpPFhPy_Po-k_fsQ8yD9tpLF8_R28a2GJ8XPACdIc9j6HoVeKlr5k446yYb");'></div>
+<div class="flex-1">
+<h3 class="text-xl font-bold text-slate-800 mb-1">Famous Landmarks</h3>
+<p class="text-slate-500">Recognize famous landmarks from around the world.</p>
+</div>
+<button class="w-full h-10 px-4 rounded-md bg-[var(--primary-color)] text-white font-semibold text-sm transition-opacity opacity-0 group-hover:opacity-100">View Leaderboard</button>
+</div>
+<div class="group flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:shadow-lg hover:-translate-y-1 cursor-pointer">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDcLXhtrb8OcfsaTvPubwsJttsMwmvC84yIiHjjowGk_o2gxnfjDhd4ehxAmHRL5hHSaEwXjvO9a2ruRUWBvm7olWR_xRESmUTlMtHmJtFzpbEfqzWC6mzK9FQ8TUXIbR4narpzG7b5ogTESLP3PYe04HjMMuk3_NPT0SRTbBe-97eU_R8x8fh5RoHZTSHdIKPygEFWQVy0YIHHgjNyYp5p6DhTV8RpXdPa8Z5V8OIS99_GwuoQ-BFJO3yGk3bg2T9qj8h8Dfe4769J");'></div>
+<div class="flex-1">
+<h3 class="text-xl font-bold text-slate-800 mb-1">Countries by Shape</h3>
+<p class="text-slate-500">Identify countries based on their shapes.</p>
+</div>
+<button class="w-full h-10 px-4 rounded-md bg-[var(--primary-color)] text-white font-semibold text-sm transition-opacity opacity-0 group-hover:opacity-100">View Leaderboard</button>
+</div>
+<div class="group flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:shadow-lg hover:-translate-y-1 cursor-pointer">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDd9oT1WXGCFcy2ZPiJSa70fcVIBPQmtArGKgVIqf0mfU8h5gBQwrjrbA12Q_nzBHrKMdqQ9MgtvdSS-qzQDT4pqjDKEWc8W9ZaQDeeuADcQMk8ESMqki3a02SFR_XPzJdox3INF7dBad_77okUVRgoexcg2kaX-o-v8nMu70KwxLMoq1XX8kxBT02UHZ3a_NRAwe4umhiSp5Kr9lzXTgwduXZAeIzCbNi2SaIrTLHVWEA2TB-o1r9JmrJrhSQD40j0U-kYsnpDS7RS");'></div>
+<div class="flex-1">
+<h3 class="text-xl font-bold text-slate-800 mb-1">Rivers and Mountains</h3>
+<p class="text-slate-500">Learn about major rivers and mountain ranges.</p>
+</div>
+<button class="w-full h-10 px-4 rounded-md bg-[var(--primary-color)] text-white font-semibold text-sm transition-opacity opacity-0 group-hover:opacity-100">View Leaderboard</button>
+</div>
+<div class="group flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:shadow-lg hover:-translate-y-1 cursor-pointer">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAUC4XSh7ukm9ABkWH-IzWtHgP7TIy0V5qtfMHvieD9OEzmyiV4oiz3wvEcpMiszc1F6HytSqnORsNg5NJcXvCZTNTjJQQgQVwVQ9OxpEi8e12BkfUsAvvfZoUWJYNi4ZcoABuu3k7V1-ZCt8CHdZdttVJEJuTps3TSCA0Z8rr7MNTKCE1_nPrEWey25Vs-R36lJYPy9ZIJSVFbexvhePvkO6vUeS7kZHxvcLMZIoTlyoSeMHXOVvzDw76gSadOuFq9CjGgtu12T543");'></div>
+<div class="flex-1">
+<h3 class="text-xl font-bold text-slate-800 mb-1">Geographic Wonders</h3>
+<p class="text-slate-500">Explore natural wonders and geographic features.</p>
+</div>
+<button class="w-full h-10 px-4 rounded-md bg-[var(--primary-color)] text-white font-semibold text-sm transition-opacity opacity-0 group-hover:opacity-100">View Leaderboard</button>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-3xl font-bold text-slate-900 mb-6 tracking-tight">Leaderboards</h2>
+<div class="overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm">
+<table class="w-full text-left">
+<thead class="bg-slate-50">
+<tr>
+<th class="px-6 py-4 text-slate-600 text-sm font-semibold">Quiz</th>
+<th class="px-6 py-4 text-slate-600 text-sm font-semibold">Top Score</th>
+<th class="px-6 py-4 text-slate-600 text-sm font-semibold">Player</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-200">
+<tr>
+<td class="px-6 py-4 text-slate-800 font-medium">World Capitals</td>
+<td class="px-6 py-4 text-slate-500">95</td>
+<td class="px-6 py-4 text-slate-500">Sophia</td>
+</tr>
+<tr>
+<td class="px-6 py-4 text-slate-800 font-medium">Flags of the World</td>
+<td class="px-6 py-4 text-slate-500">92</td>
+<td class="px-6 py-4 text-slate-500">Ethan</td>
+</tr>
+<tr>
+<td class="px-6 py-4 text-slate-800 font-medium">Famous Landmarks</td>
+<td class="px-6 py-4 text-slate-500">98</td>
+<td class="px-6 py-4 text-slate-500">Olivia</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

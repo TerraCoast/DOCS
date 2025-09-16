@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #13a4ec;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-['Space_Grotesk'] text-[#0d171b]">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 px-10 py-3">
+<div class="flex items-center gap-4">
+<svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h2 class="text-2xl font-bold">GeoDuel</h2>
+</div>
+<nav class="flex items-center gap-6 text-sm font-medium">
+<a class="hover:text-[var(--primary-color)] transition-colors" href="#">Home</a>
+<a class="hover:text-[var(--primary-color)] transition-colors" href="#">Quizzes</a>
+<a class="text-[var(--primary-color)] font-bold" href="#">Duel</a>
+<a class="hover:text-[var(--primary-color)] transition-colors" href="#">Leaderboard</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="relative rounded-full p-2 hover:bg-slate-100 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-1 right-1 h-2 w-2 rounded-full bg-red-500"></span>
+</button>
+<div class="h-10 w-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7X0wywkjOd0LsVT2aDWR3RmQc-fo79_4idbgs5XbZrMx-WsXQu4S2g3A_eoaVGy1Xvke3JSvi7oQVS0ao-08fdRuwRnN8DWc8YSAPtfMYZLknelFw0ZiUWXFsClskz7v429wY9RVwi215CyJcjXUn0yWTyn1TJsaS2CN5-eF3e6ibz4NFjDG4S6HmnwmwKSYplXNvlovZ1IJQ44qiLLag8GWcenWevH09LEE66XVajci0-SAWuQc43CIfUS3RdHJnWll-HIX6Q5n9");'></div>
+</div>
+</header>
+<main class="flex-1 px-10 py-8">
+<div class="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-12">
+<div class="lg:col-span-2 space-y-8">
+<h1 class="text-4xl font-bold tracking-tight">Set Up a Duel</h1>
+<div class="space-y-6">
+<h3 class="text-2xl font-bold">Choose a Category</h3>
+<div>
+<h4 class="text-lg font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-yellow-500">star</span> Most Popular
+                            </h4>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="relative group rounded-xl overflow-hidden cursor-pointer border-4 border-transparent hover:border-[var(--primary-color)] transition-all duration-300 ring-2 ring-[var(--primary-color)] shadow-lg">
+<div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300"></div>
+<img class="w-full h-40 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY2eCDGTfw0Cj8jdNB2n_OBkhUsRjxmzEd2D2JZCGkTJ0j6glpQpumNFznAYOylF4vPl8oKbxdzAHjuZJ6PJf0-oXdSq_ZKBggOllhN_xb966i30UpXVXmNvOAR93hfXZTTZhMbNTNrej5pNcfquA-jAKDG8110rlMk0CXn2W34E1R2HQThzw5_a3jbQRoyrb5q4grHclur5D6_iO5vaDksfPRL7SxZRotWL8400sCzHlTKnLiBE-ou1wafYD0dlduwsWQUNZXEDUJ"/>
+<div class="absolute bottom-0 left-0 p-4">
+<h5 class="text-white text-xl font-bold">World Capitals</h5>
+</div>
+<div class="absolute top-2 right-2 h-8 w-8 rounded-full bg-[var(--primary-color)] flex items-center justify-center text-white">
+<span class="material-symbols-outlined">check</span>
+</div>
+</div>
+<div class="relative group rounded-xl overflow-hidden cursor-pointer border-4 border-transparent hover:border-[var(--primary-color)] transition-all duration-300">
+<div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300"></div>
+<img class="w-full h-40 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY2eCDGTfw0Cj8jdNB2n_OBkhUsRjxmzEd2D2JZCGkTJ0j6glpQpumNFznAYOylF4vPl8oKbxdzAHjuZJ6PJf0-oXdSq_ZKBggOllhN_xb966i30UpXVXmNvOAR93hfXZTTZhMbNTNrej5pNcfquA-jAKDG8110rlMk0CXn2W34E1R2HQThzw5_a3jbQRoyrb5q4grHclur5D6_iO5vaDksfPRL7SxZRotWL8400sCzHlTKnLiBE-ou1wafYD0dlduwsWQUNZXEDUJ"/>
+<div class="absolute bottom-0 left-0 p-4">
+<h5 class="text-white text-xl font-bold">Flags of the World</h5>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">All Categories</h4>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="relative group rounded-xl overflow-hidden cursor-pointer border-4 border-transparent hover:border-[var(--primary-color)] transition-all duration-300">
+<div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300"></div>
+<img class="w-full h-32 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY2eCDGTfw0Cj8jdNB2n_OBkhUsRjxmzEd2D2JZCGkTJ0j6glpQpumNFznAYOylF4vPl8oKbxdzAHjuZJ6PJf0-oXdSq_ZKBggOllhN_xb966i30UpXVXmNvOAR93hfXZTTZhMbNTNrej5pNcfquA-jAKDG8110rlMk0CXn2W34E1R2HQThzw5_a3jbQRoyrb5q4grHclur5D6_iO5vaDksfPRL7SxZRotWL8400sCzHlTKnLiBE-ou1wafYD0dlduwsWQUNZXEDUJ"/>
+<div class="absolute bottom-0 left-0 p-3">
+<h5 class="text-white font-semibold">U.S. States</h5>
+</div>
+</div>
+<div class="relative group rounded-xl overflow-hidden cursor-pointer border-4 border-transparent hover:border-[var(--primary-color)] transition-all duration-300">
+<div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300"></div>
+<img class="w-full h-32 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY2eCDGTfw0Cj8jdNB2n_OBkhUsRjxmzEd2D2JZCGkTJ0j6glpQpumNFznAYOylF4vPl8oKbxdzAHjuZJ6PJf0-oXdSq_ZKBggOllhN_xb966i30UpXVXmNvOAR93hfXZTTZhMbNTNrej5pNcfquA-jAKDG8110rlMk0CXn2W34E1R2HQThzw5_a3jbQRoyrb5q4grHclur5D6_iO5vaDksfPRL7SxZRotWL8400sCzHlTKnLiBE-ou1wafYD0dlduwsWQUNZXEDUJ"/>
+<div class="absolute bottom-0 left-0 p-3">
+<h5 class="text-white font-semibold">Famous Landmarks</h5>
+</div>
+</div>
+<div class="relative group rounded-xl overflow-hidden cursor-pointer border-4 border-transparent hover:border-[var(--primary-color)] transition-all duration-300">
+<div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300"></div>
+<img class="w-full h-32 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY2eCDGTfw0Cj8jdNB2n_OBkhUsRjxmzEd2D2JZCGkTJ0j6glpQpumNFznAYOylF4vPl8oKbxdzAHjuZJ6PJf0-oXdSq_ZKBggOllhN_xb966i30UpXVXmNvOAR93hfXZTTZhMbNTNrej5pNcfquA-jAKDG8110rlMk0CXn2W34E1R2HQThzw5_a3jbQRoyrb5q4grHclur5D6_iO5vaDksfPRL7SxZRotWL8400sCzHlTKnLiBE-ou1wafYD0dlduwsWQUNZXEDUJ"/>
+<div class="absolute bottom-0 left-0 p-3">
+<h5 class="text-white font-semibold">Mountain Ranges</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="text-2xl font-bold">Invite Friends</h3>
+<div class="relative">
+<input class="w-full rounded-md border-slate-300 bg-white py-3 pl-10 pr-4 text-base focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)]" placeholder="Search by username..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+</div>
+<div class="space-y-4 max-h-60 overflow-y-auto pr-2">
+<div class="flex items-center justify-between rounded-md p-3 hover:bg-slate-100 transition-colors">
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7X0wywkjOd0LsVT2aDWR3RmQc-fo79_4idbgs5XbZrMx-WsXQu4S2g3A_eoaVGy1Xvke3JSvi7oQVS0ao-08fdRuwRnN8DWc8YSAPtfMYZLknelFw0ZiUWXFsClskz7v429wY9RVwi215CyJcjXUn0yWTyn1TJsaS2CN5-eF3e6ibz4NFjDG4S6HmnwmwKSYplXNvlovZ1IJQ44qiLLag8GWcenWevH09LEE66XVajci0-SAWuQc43CIfUS3RdHJnWll-HIX6Q5n9");'></div>
+<div>
+<p class="font-semibold">Alex Rivera</p>
+<p class="text-sm text-slate-500">Online</p>
+</div>
+</div>
+<button class="rounded-md bg-slate-200 px-4 py-2 text-sm font-semibold hover:bg-slate-300 transition-colors">Invite</button>
+</div>
+<div class="flex items-center justify-between rounded-md p-3 hover:bg-slate-100 transition-colors">
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBh8S-FbvxOJf9IMhP9-3ymEsjEoWi8ffvxsEPJfeOeQBj_W8o55pK8rJTnYtxhbav7SI1pI8BR0_z60KpOW6LbThHWbzAA02J0eH0lX9ZIzb1D0txKTrVr7TUqjQKD7iRHid4HLrPpxC07-uJI4CKW8eMbtDQKvylA4CwO6pYu7msaV85CfkPqX-E0vIcHOvp0pHEc7tudMxbMk4zopcsD8KNvek4IorrEdMDqHLPtnwjvR6RBsPbOps--8u2ZY04kZGOtjSjjTP37");'></div>
+<div>
+<p class="font-semibold">Sophia Clark</p>
+<p class="text-sm text-slate-500">Online</p>
+</div>
+</div>
+<button class="rounded-md bg-slate-200 px-4 py-2 text-sm font-semibold hover:bg-slate-300 transition-colors">Invite</button>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-8 rounded-lg bg-white p-8 shadow-sm border border-slate-200 lg:col-span-1 h-fit">
+<h3 class="text-2xl font-bold">Duel Settings</h3>
+<div class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-slate-700 mb-2" for="questions">Number of Questions</label>
+<select class="w-full rounded-md border-slate-300 bg-white py-3 pl-4 pr-10 text-base focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)]" id="questions" name="questions">
+<option>10</option>
+<option>15</option>
+<option selected="">20</option>
+<option>25</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 mb-2" for="time-limit">Time Limit per Question</label>
+<select class="w-full rounded-md border-slate-300 bg-white py-3 pl-4 pr-10 text-base focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)]" id="time-limit" name="time-limit">
+<option>15 seconds</option>
+<option selected="">30 seconds</option>
+<option>45 seconds</option>
+<option>60 seconds</option>
+</select>
+</div>
+</div>
+<div class="border-t border-slate-200 pt-6">
+<h4 class="text-lg font-semibold mb-3">Invited Players</h4>
+<div class="flex items-center gap-4">
+<div class="relative">
+<div class="h-12 w-12 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBh8S-FbvxOJf9IMhP9-3ymEsjEoWi8ffvxsEPJfeOeQBj_W8o55pK8rJTnYtxhbav7SI1pI8BR0_z60KpOW6LbThHWbzAA02J0eH0lX9ZIzb1D0txKTrVr7TUqjQKD7iRHid4HLrPpxC07-uJI4CKW8eMbtDQKvylA4CwO6pYu7msaV85CfkPqX-E0vIcHOvp0pHEc7tudMxbMk4zopcsD8KNvek4IorrEdMDqHLPtnwjvR6RBsPbOps--8u2ZY04kZGOtjSjjTP37");'></div>
+<button class="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-slate-500 text-white hover:bg-slate-600 transition-colors">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+<p class="font-medium">Sophia Clark</p>
+</div>
+</div>
+<button class="w-full rounded-md bg-[var(--primary-color)] py-3 text-lg font-bold text-white hover:bg-[#1093d6] transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">swords</span>
+                        Start Duel
+                    </button>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

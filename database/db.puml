@@ -1,0 +1,117 @@
+@startuml
+
+class User {
+  +UUID id
+  +String username
+  +String email
+  +String password_hash
+  +String role         -- roles: "user", "admin"
+  +Timestamp joined_at
+  +int published_quiz_count      -- max 10 quizzes publiés
+}
+
+class Badge {
+  +UUID id
+  +String name
+  +String description
+  +String color
+  +String icon
+}
+
+class Title {
+  +UUID id
+  +String name
+  +String description
+  +String color
+  +String icon
+}
+
+class Quiz {
+  +UUID id
+  +UUID author_id         -- FK User.id
+  +String title
+  +String description
+  +Boolean published      -- true = public, false = privé
+  +Timestamp created_at
+  +Timestamp updated_at
+}
+
+class Question {
+  +UUID id
+  +UUID quiz_id           -- FK Quiz.id
+  +String type            -- ex : "texte", "image", "qcm", "carte", "carte_clic"
+  +String text            -- texte de la question
+  +String media_url       -- URL image ou autre ressource média (nullable)
+}
+
+class Answer {
+  +UUID id
+  +UUID question_id       -- FK Question.id
+  +String text            -- texte réponse / saisie libre
+  +Boolean is_correct     -- pour QCM ou validation
+}
+
+class PasswordResetToken {
+  +UUID id
+  +UUID user_id           -- FK User.id
+  +String token_hash      -- token hashé envoyé par mail
+  +Timestamp expires_at
+  +Boolean used
+}
+
+class UserBadge {
+  +UUID user_id
+  +UUID badge_id
+  +Timestamp awarded_at
+}
+
+class UserTitle {
+  +UUID user_id
+  +UUID title_id
+  +Timestamp awarded_at
+}
+
+class Friendship {
+  +UUID id
+  +UUID user_id           -- FK User.id
+  +UUID friend_id         -- FK User.id
+  +String status          -- ex : pending, accepted, declined
+  +Timestamp created_at
+}
+
+class Duel {
+  +UUID id
+  +UUID quiz_id           -- FK Quiz.id
+  +UUID player1_id        -- FK User.id
+  +UUID player2_id        -- FK User.id
+  +UUID winner_id         -- FK User.id (nullable si nul)
+  +Timestamp started_at
+  +Timestamp finished_at
+}
+
+class Leaderboard {
+  +UUID id
+  +UUID quiz_id           -- FK Quiz.id
+  +UUID user_id           -- FK User.id
+  +int score
+  +float accuracy
+  +int time_taken         -- en secondes
+  +Timestamp updated_at
+}
+
+User "1" -- "*" Quiz : creates
+User "1" -- "*" UserBadge
+User "1" -- "*" UserTitle
+User "1" -- "*" Friendship : initiator
+User "1" -- "*" Friendship : friend
+User "1" -- "*" Leaderboard
+User "1" -- "*" Duel : participant
+UserBadge "*" -- "1" Badge
+UserTitle "*" -- "1" Title
+Quiz "1" -- "*" Question
+Question "1" -- "*" Answer
+Quiz "1" -- "*" Duel
+Leaderboard "*" -- "1" Quiz
+User "1" -- "*" PasswordResetToken
+
+@enduml

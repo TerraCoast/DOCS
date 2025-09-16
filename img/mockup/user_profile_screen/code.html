@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #13a4ec;
+      }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 px-10 py-4">
+<div class="flex items-center gap-3 text-slate-900">
+<div class="size-6 text-[var(--primary-color)]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-tight">GeoQuiz</h2>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+<a class="hover:text-slate-900 transition-colors" href="#">Play</a>
+<a class="hover:text-slate-900 transition-colors" href="#">Leaderboard</a>
+<a class="hover:text-slate-900 transition-colors" href="#">Challenges</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="text-slate-500 hover:text-slate-900 transition-colors">
+<span class="material-symbols-outlined"> settings </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBZVfkMmASCKbS9yf9Dj_1-QIGyfzrtfgpkgSA6ShbnK1AelU64AIiv5SarueyszAYI9oD8Vz_BVSvt_SxOCGo2EdiUIarKlBbsesPFI3tDMiksMeiPKnq6TJOb1roeFHK8gPnivV4BGz976o2IxqnhTndNZSytfekKBEy9CL2JUvkh_WJ3CPEw4aRLrQu5SBLlINvg0XtCi8XjxSOrpwpUEIsYJRTVHAAyU48ffH6FUm7xffEBDWDnhQ4Yf21xsrAk59Mmjtv_MdkO");'></div>
+</div>
+</div>
+</header>
+<main class="flex-1 px-4 sm:px-6 lg:px-8 py-12">
+<div class="max-w-5xl mx-auto">
+<div class="flex flex-col md:flex-row items-center md:items-start gap-8 p-6 bg-white rounded-xl shadow-sm mb-8">
+<div class="flex-shrink-0">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-32 border-4 border-white shadow-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKIAERMe4FzVz6BdDhxiELbv6Tnvl7Sf-fZSkQGsfGirevDspUtovYLuokHSulg-MvBPO4ygxc_gANQ_XhTysoiGaUjR5iokrFcimy88tKdk9xMVpo-ylTU0GQ278kMhVzQ0o9qOevjUcakaGKjukUHHhX0bQNdVsZumsB2DYH2KwkrfmrzvbqOu4mPXkVpSaUdShQcQUqlLwFMilFDXiklBZUdrKGJMtJ0XSOOhrh12SR27rNFTXX63arMCThUrFtyxUoj7FTpqJU");'></div>
+</div>
+<div class="flex-1 text-center md:text-left">
+<h1 class="text-3xl font-bold text-slate-900">Sophia Clark</h1>
+<p class="text-slate-500 mt-1">Level 12 • Joined 2022</p>
+<div class="mt-4 flex flex-wrap justify-center md:justify-start gap-4">
+<button class="flex items-center justify-center gap-2 h-10 px-5 bg-[var(--primary-color)] text-white text-sm font-bold rounded-md hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-base"> edit </span>
+<span>Edit Profile</span>
+</button>
+<button class="flex items-center justify-center gap-2 h-10 px-5 bg-slate-100 text-slate-700 text-sm font-bold rounded-md hover:bg-slate-200 transition-colors">
+<span class="material-symbols-outlined text-base"> history </span>
+<span>View Game History</span>
+</button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
+<div class="flex flex-col gap-2 rounded-xl border border-slate-200 bg-white p-5 items-center text-center shadow-sm">
+<p class="text-4xl font-bold text-slate-900">85%</p>
+<p class="text-slate-500 text-sm font-medium">Overall Accuracy</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl border border-slate-200 bg-white p-5 items-center text-center shadow-sm">
+<p class="text-4xl font-bold text-slate-900">150</p>
+<p class="text-slate-500 text-sm font-medium">Quizzes Played</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl border border-slate-200 bg-white p-5 items-center text-center shadow-sm">
+<p class="text-4xl font-bold text-slate-900">32</p>
+<p class="text-slate-500 text-sm font-medium">Top Scores</p>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-sm p-6 mb-8">
+<h2 class="text-2xl font-bold text-slate-900 mb-6">Achievements</h2>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+<div class="flex flex-col items-center gap-2 text-center group">
+<div class="w-24 h-24 bg-center bg-no-repeat bg-cover rounded-full border-4 border-slate-200 group-hover:border-[var(--primary-color)] transition-colors" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1PAu1Pl44foHaPYUfmC9sVdPto0ruo7zMZJX4O6ldnMvA5CJqgNFp6-wdtEI2d2Y6x4z3QdCTAYbi0jx0W2L7YRd9vJm09dI9vSFH6CYgD4uClvl6Wm1H-I0jBsE2Qg4ueTNPwvzdAmlCqPTLer2-vf4TOu6yUhf_DMy7uXq-2Uyv4pU3EWIlUba64g9ASJ1pOH4FS7Ihh_OWjIDwwT9Nwk0xcDmJ9OVuEL68_g6wfCVYOykm7K9yYA4xvbvKH921DpUqR5pkm7Pq");'></div>
+<p class="text-sm font-medium text-slate-700">World Explorer</p>
+</div>
+<div class="flex flex-col items-center gap-2 text-center group">
+<div class="w-24 h-24 bg-center bg-no-repeat bg-cover rounded-full border-4 border-slate-200 group-hover:border-[var(--primary-color)] transition-colors" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDuWp6gS1Bl7q7PeQQVZJs1HdPNmNFb2uvw6BMYYfMwGIr2oZl0pvXfWWXXlYWOBF6dawEIzshikUE3bf83BUOetirCPJoLFm0HRu39lknva-dqcfcJJzrYGBUEDwuBxOWb6K7wu6Re6IawJIjSAHN8EtpkGCBG0LO6Bqu6LtnO5rawGIQSkXLTWT-338MgpMkN0qVRt63ZQiuz7CVAgEBLTU19nUCxSk1DcRQwmmz-Fy3Y3kFEs04Clqq40lRv8WCx-i80KWhhOZte");'></div>
+<p class="text-sm font-medium text-slate-700">Capital King</p>
+</div>
+<div class="flex flex-col items-center gap-2 text-center group">
+<div class="w-24 h-24 bg-center bg-no-repeat bg-cover rounded-full border-4 border-slate-200 group-hover:border-[var(--primary-color)] transition-colors" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBVfbXEE3sBsJeo--cM9mQbNrmR2wYWdH1QRjXNvxa-9I2NuY8c4ukK8NiBz_v3MJRDrYxdNwoj00IqcJ8TBixHE_OACE7aown87F5Is-SSjINhRpB4yVevlTTtpvZc2Mu7IGTPKRZ_X4S7T6QLKX0TdTHHNCqG-wBPpm2Q9xExZ1MyQtW4EC3Lt7rnukRc9uQ3-Pg59z3gLJnI4TmvrHlsPiabgHFOd10tGxkrRvURgqiUFGzWG7ITf9xreQ9WLr34MuZmVxbJPcTP");'></div>
+<p class="text-sm font-medium text-slate-700">Flag Fanatic</p>
+</div>
+<div class="flex flex-col items-center gap-2 text-center group">
+<div class="w-24 h-24 bg-center bg-no-repeat bg-cover rounded-full border-4 border-slate-200 group-hover:border-[var(--primary-color)] transition-colors" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD3wsM8dGldjnSgQHy3AiLkt7FggSWUkL5_dZv3R4luLZNKwxVnm273wrfi0bFanh1fWXRg2L1EiZ6jk9XLKB6YwtiWAuAW2sm4WkOk8pSzwaNfrOiyVQkMLjnjpnrvK_SBvKJnVVUFrpZtWdyngmKdXSi7eN4VOANHXbdj069rxFuEGs4V5nunhmV0bTBBx0i3KWqFcnnggabASyUodPDCeNyS2KYwW1e5617hxEHXuKKrrYgu_Qj2zDPzI6Nc6n3vB7uzRs1H6xJb");'></div>
+<p class="text-sm font-medium text-slate-700">Duel Master</p>
+</div>
+<div class="flex flex-col items-center gap-2 text-center group">
+<div class="w-24 h-24 bg-center bg-no-repeat bg-cover rounded-full border-4 border-slate-200 group-hover:border-[var(--primary-color)] transition-colors" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCL8DWcGqjYAcY6dWMQEzGSCcGjMX438cjA2pIIJj2hmMgPgVBgH6-YOJh4pO6Vdjyj8fALQ85grF6AnStI5gz4_KYrLB1DivSSYMvOhO7gbW6AnXIAJPrj5rOgQuY_9wKLQNgikKboPc1x6U4ZgxSYtZ-cp0RGA3EuMw4lnoHPRMEwr38NId-un3Wl5HdMtRfviM1z12ncY21LIiJcUkmH5nTFJ9FzR56DczTKxiI25rvUFN8QrmGgvdySRt-jMLQGdwiEhjHUUwGl");'></div>
+<p class="text-sm font-medium text-slate-700">Streaker</p>
+</div>
+<div class="flex flex-col items-center gap-2 text-center group">
+<div class="w-24 h-24 bg-center bg-no-repeat bg-cover rounded-full border-4 border-slate-200 group-hover:border-[var(--primary-color)] transition-colors" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAVI2FzB6MiJQUO58eDsWaHY_ltLHUnXyde8rIL3qS7m7I_rGmqgcOAfTrsmoRvmqbo2RdmkaRIPKE-zFLGe7zypOfqNM2WAQt4aajPkudjgAjBKHFlSV6Jt0lmesT1yh9P1A7nB6cUTBQj4dNZOFIFxmA6iIvxZNwtlcUZnhbkz5t99IIK-T3Y8JgROjLREaajwjAxfASVwDRvhuPVbvYT36ByV1o3cfaC-hqd154CS546eff2BO8c9O4FnlI0jx5YzJ2xiUKrevF_");'></div>
+<p class="text-sm font-medium text-slate-700">Globe Trotter</p>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-sm mt-8">
+<div class="p-6">
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+<h2 class="text-2xl font-bold text-slate-900">Social Hub</h2>
+<button class="flex items-center justify-center gap-2 h-10 px-5 bg-slate-100 text-slate-700 text-sm font-bold rounded-md hover:bg-slate-200 transition-colors mt-4 sm:mt-0">
+<span class="material-symbols-outlined text-base"> person_add </span>
+<span>Add Friends</span>
+</button>
+</div>
+<div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<h3 class="text-lg font-bold text-slate-800 mb-4">Friends List</h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA225eQycfgg91VNYTmvTq5ZKRtEh_9eU8eFcUjoGUx0u80-T5SO8VH6hM7fxBMoTGUqnCVvM6DTq2Djz7nlzF5mEoJ0SXP7lbO775zoh-ubSxFPolY0ak9D_Ui4cLsesxw8Toe76x4UlSnF4u59iRlIx6a71Lb-63ZTnXDr6Ncw7LZIsae-qxyjSwVtQSsk34wpEhtKkeboT7SjjlPuL9lMFv4jMEJiBi8csNzrG61rAvYeWPgT2PdYRT70VPfmlSzNJkGBqQayWdB");'></div>
+<div>
+<p class="font-semibold text-slate-900">Alex Johnson</p>
+<p class="text-sm text-slate-500">Online</p>
+</div>
+</div>
+<button class="text-slate-400 hover:text-[var(--primary-color)] transition-colors"><span class="material-symbols-outlined"> chat_bubble </span></button>
+</div>
+<div class="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA225eQycfgg91VNYTmvTq5ZKRtEh_9eU8eFcUjoGUx0u80-T5SO8VH6hM7fxBMoTGUqnCVvM6DTq2Djz7nlzF5mEoJ0SXP7lbO775zoh-ubSxFPolY0ak9D_Ui4cLsesxw8Toe76x4UlSnF4u59iRlIx6a71Lb-63ZTnXDr6Ncw7LZIsae-qxyjSwVtQSsk34wpEhtKkeboT7SjjlPuL9lMFv4jMEJiBi8csNzrG61rAvYeWPgT2PdYRT70VPfmlSzNJkGBqQayWdB");'></div>
+<div>
+<p class="font-semibold text-slate-900">Maria Garcia</p>
+<p class="text-sm text-slate-500">Last seen 2 hours ago</p>
+</div>
+</div>
+<button class="text-slate-400 hover:text-[var(--primary-color)] transition-colors"><span class="material-symbols-outlined"> chat_bubble </span></button>
+</div>
+<div class="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA225eQycfgg91VNYTmvTq5ZKRtEh_9eU8eFcUjoGUx0u80-T5SO8VH6hM7fxBMoTGUqnCVvM6DTq2Djz7nlzF5mEoJ0SXP7lbO775zoh-ubSxFPolY0ak9D_Ui4cLsesxw8Toe76x4UlSnF4u59iRlIx6a71Lb-63ZTnXDr6Ncw7LZIsae-qxyjSwVtQSsk34wpEhtKkeboT7SjjlPuL9lMFv4jMEJiBi8csNzrG61rAvYeWPgT2PdYRT70VPfmlSzNJkGBqQayWdB");'></div>
+<div>
+<p class="font-semibold text-slate-900">David Smith</p>
+<p class="text-sm text-slate-500">In a duel</p>
+</div>
+</div>
+<button class="text-slate-400 hover:text-[var(--primary-color)] transition-colors"><span class="material-symbols-outlined"> chat_bubble </span></button>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold text-slate-800 mb-4">Friend Requests (2)</h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA225eQycfgg91VNYTmvTq5ZKRtEh_9eU8eFcUjoGUx0u80-T5SO8VH6hM7fxBMoTGUqnCVvM6DTq2Djz7nlzF5mEoJ0SXP7lbO775zoh-ubSxFPolY0ak9D_Ui4cLsesxw8Toe76x4UlSnF4u59iRlIx6a71Lb-63ZTnXDr6Ncw7LZIsae-qxyjSwVtQSsk34wpEhtKkeboT7SjjlPuL9lMFv4jMEJiBi8csNzrG61rAvYeWPgT2PdYRT70VPfmlSzNJkGBqQayWdB");'></div>
+<p class="font-semibold text-slate-900">Emily White</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="size-8 rounded-full bg-green-100 text-green-600 hover:bg-green-200 transition-colors flex items-center justify-center"><span class="material-symbols-outlined text-lg"> check </span></button>
+<button class="size-8 rounded-full bg-red-100 text-red-600 hover:bg-red-200 transition-colors flex items-center justify-center"><span class="material-symbols-outlined text-lg"> close </span></button>
+</div>
+</div>
+<div class="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA225eQycfgg91VNYTmvTq5ZKRtEh_9eU8eFcUjoGUx0u80-T5SO8VH6hM7fxBMoTGUqnCVvM6DTq2Djz7nlzF5mEoJ0SXP7lbO775zoh-ubSxFPolY0ak9D_Ui4cLsesxw8Toe76x4UlSnF4u59iRlIx6a71Lb-63ZTnXDr6Ncw7LZIsae-qxyjSwVtQSsk34wpEhtKkeboT7SjjlPuL9lMFv4jMEJiBi8csNzrG61rAvYeWPgT2PdYRT70VPfmlSzNJkGBqQayWdB");'></div>
+<p class="font-semibold text-slate-900">Chris Brown</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="size-8 rounded-full bg-green-100 text-green-600 hover:bg-green-200 transition-colors flex items-center justify-center"><span class="material-symbols-outlined text-lg"> check </span></button>
+<button class="size-8 rounded-full bg-red-100 text-red-600 hover:bg-red-200 transition-colors flex items-center justify-center"><span class="material-symbols-outlined text-lg"> close </span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 border-t border-slate-200 pt-6">
+<h3 class="text-lg font-bold text-slate-800 mb-4">Friends Leaderboard</h3>
+<div class="overflow-x-auto">
+<table class="w-full text-sm text-left text-slate-500">
+<thead class="text-xs text-slate-700 uppercase bg-slate-50">
+<tr>
+<th class="px-6 py-3" scope="col">Rank</th>
+<th class="px-6 py-3" scope="col">Player</th>
+<th class="px-6 py-3" scope="col">Score</th>
+<th class="px-6 py-3" scope="col">Quizzes Played</th>
+</tr>
+</thead>
+<tbody>
+<tr class="bg-white border-b hover:bg-slate-50">
+<td class="px-6 py-4 font-medium text-slate-900">1</td>
+<td class="px-6 py-4 font-semibold text-slate-900 flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA225eQycfgg91VNYTmvTq5ZKRtEh_9eU8eFcUjoGUx0u80-T5SO8VH6hM7fxBMoTGUqnCVvM6DTq2Djz7nlzF5mEoJ0SXP7lbO775zoh-ubSxFPolY0ak9D_Ui4cLsesxw8Toe76x4UlSnF4u59iRlIx6a71Lb-63ZTnXDr6Ncw7LZIsae-qxyjSwVtQSsk34wpEhtKkeboT7SjjlPuL9lMFv4jMEJiBi8csNzrG61rAvYeWPgT2PdYRT70VPfmlSzNJkGBqQayWdB");'></div>
+Alex Johnson
+</td>
+<td class="px-6 py-4">18500</td>
+<td class="px-6 py-4">210</td>
+</tr>
+<tr class="bg-white border-b hover:bg-slate-50 bg-[var(--primary-color)]/10">
+<td class="px-6 py-4 font-medium text-[var(--primary-color)]">2</td>
+<td class="px-6 py-4 font-semibold text-[var(--primary-color)] flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKIAERMe4FzVz6BdDhxiELbv6Tnvl7Sf-fZSkQGsfGirevDspUtovYLuokHSulg-MvBPO4ygxc_gANQ_XhTysoiGaUjR5iokrFcimy88tKdk9xMVpo-ylTU0GQ278kMhVzQ0o9qOevjUcakaGKjukUHHhX0bQNdVsZumsB2DYH2KwkrfmrzvbqOu4mPXkVpSaUdShQcQUqlLwFMilFDXiklBZUdrKGJMtJ0XSOOhrh12SR27rNFTXX63arMCThUrFtyxUoj7FTpqJU");'></div>
+You
+</td>
+<td class="px-6 py-4 font-medium text-[var(--primary-color)]">16200</td>
+<td class="px-6 py-4 font-medium text-[var(--primary-color)]">150</td>
+</tr>
+<tr class="bg-white border-b hover:bg-slate-50">
+<td class="px-6 py-4 font-medium text-slate-900">3</td>
+<td class="px-6 py-4 font-semibold text-slate-900 flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA225eQycfgg91VNYTmvTq5ZKRtEh_9eU8eFcUjoGUx0u80-T5SO8VH6hM7fxBMoTGUqnCVvM6DTq2Djz7nlzF5mEoJ0SXP7lbO775zoh-ubSxFPolY0ak9D_Ui4cLsesxw8Toe76x4UlSnF4u59iRlIx6a71Lb-63ZTnXDr6Ncw7LZIsae-qxyjSwVtQSsk34wpEhtKkeboT7SjjlPuL9lMFv4jMEJiBi8csNzrG61rAvYeWPgT2PdYRT70VPfmlSzNJkGBqQayWdB");'></div>
+David Smith
+</td>
+<td class="px-6 py-4">14800</td>
+<td class="px-6 py-4">180</td>
+</tr>
+<tr class="bg-white hover:bg-slate-50">
+<td class="px-6 py-4 font-medium text-slate-900">4</td>
+<td class="px-6 py-4 font-semibold text-slate-900 flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA225eQycfgg91VNYTmvTq5ZKRtEh_9eU8eFcUjoGUx0u80-T5SO8VH6hM7fxBMoTGUqnCVvM6DTq2Djz7nlzF5mEoJ0SXP7lbO775zoh-ubSxFPolY0ak9D_Ui4cLsesxw8Toe76x4UlSnF4u59iRlIx6a71Lb-63ZTnXDr6Ncw7LZIsae-qxyjSwVtQSsk34wpEhtKkeboT7SjjlPuL9lMFv4jMEJiBi8csNzrG61rAvYeWPgT2PdYRT70VPfmlSzNJkGBqQayWdB");'></div>
+Maria Garcia
+</td>
+<td class="px-6 py-4">13500</td>
+<td class="px-6 py-4">145</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-sm mt-8 overflow-hidden">
+<div class="p-6">
+<h2 class="text-2xl font-bold text-slate-900">Game History</h2>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-sm text-left text-slate-500">
+<thead class="text-xs text-slate-700 uppercase bg-slate-50">
+<tr>
+<th class="px-6 py-3" scope="col">Date</th>
+<th class="px-6 py-3" scope="col">Mode</th>
+<th class="px-6 py-3" scope="col">Score</th>
+<th class="px-6 py-3" scope="col">Accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="bg-white border-b hover:bg-slate-50">
+<td class="px-6 py-4 font-medium text-slate-900 whitespace-nowrap">2024-03-15</td>
+<td class="px-6 py-4">Duel</td>
+<td class="px-6 py-4">1200</td>
+<td class="px-6 py-4">90%</td>
+</tr>
+<tr class="bg-white border-b hover:bg-slate-50">
+<td class="px-6 py-4 font-medium text-slate-900 whitespace-nowrap">2024-03-14</td>
+<td class="px-6 py-4">Competitive</td>
+<td class="px-6 py-4">1500</td>
+<td class="px-6 py-4">95%</td>
+</tr>
+<tr class="bg-white border-b hover:bg-slate-50">
+<td class="px-6 py-4 font-medium text-slate-900 whitespace-nowrap">2024-03-12</td>
+<td class="px-6 py-4">Duel</td>
+<td class="px-6 py-4">1100</td>
+<td class="px-6 py-4">88%</td>
+</tr>
+<tr class="bg-white border-b hover:bg-slate-50">
+<td class="px-6 py-4 font-medium text-slate-900 whitespace-nowrap">2024-03-10</td>
+<td class="px-6 py-4">Competitive</td>
+<td class="px-6 py-4">1300</td>
+<td class="px-6 py-4">92%</td>
+</tr>
+<tr class="bg-white hover:bg-slate-50">
+<td class="px-6 py-4 font-medium text-slate-900 whitespace-nowrap">2024-03-08</td>
+<td class="px-6 py-4">Duel</td>
+<td class="px-6 py-4">1000</td>
+<td class="px-6 py-4">85%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

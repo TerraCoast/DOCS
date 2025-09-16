@@ -1,0 +1,205 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body class="bg-slate-900 text-slate-100" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-800 px-10 py-3">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6 text-[#13a4ec]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">GeoQuiz</h2>
+</div>
+<div class="flex flex-1 justify-end items-center gap-4">
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-300 hover:text-white text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-slate-300 hover:text-white text-sm font-medium leading-normal" href="#">Quizzes</a>
+<a class="text-white text-sm font-bold leading-normal border-b-2 border-[#13a4ec] pb-1" href="#">Leaderboard</a>
+<a class="text-slate-300 hover:text-white text-sm font-medium leading-normal" href="#">Profile</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-slate-800 text-slate-300 hover:bg-slate-700 transition-colors">
+<span class="material-symbols-outlined"> settings </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-[#13a4ec]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDBfc4IwNd_DJtip49pk53X6Q1L8aLHbLRMaiNzYw6t6XQA9DJfjXXq372BS-km3VnzBW3xO07FyxA-j5ng3CodELOm_lSjHIiy22xnWJUtvPRbFkivevAsRHeu7hR7m8eDIdOxNbQeJOSCqbYF_lBbJPr9lXPF6w75ffkftiiZMIHYVhfLV119jDP3kLnGLyEhHLq1_XDbnVhmYAjXam39CBkPfR_3zlSu17DPKmynBPMRvuqskfpfMaWNF6qH17TrwcCsLE9wBO0L");'></div>
+</div>
+</div>
+</header>
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-8">
+<div class="layout-content-container flex flex-col w-full max-w-5xl">
+<div class="flex flex-wrap justify-between items-center gap-4 p-4">
+<div class="flex flex-col gap-2">
+<h1 class="text-white text-4xl font-bold leading-tight tracking-tighter">Leaderboard</h1>
+<p class="text-slate-400 text-base font-normal leading-normal">See how you stack up against the competition.</p>
+</div>
+<div class="flex gap-2 p-1 bg-slate-800 rounded-lg">
+<button class="px-4 py-1.5 rounded-md text-sm font-semibold text-slate-300 hover:bg-slate-700 hover:text-white transition-colors">Daily</button>
+<button class="px-4 py-1.5 rounded-md text-sm font-semibold text-slate-300 hover:bg-slate-700 hover:text-white transition-colors">Weekly</button>
+<button class="px-4 py-1.5 rounded-md text-sm font-semibold bg-[#13a4ec] text-white">All Time</button>
+</div>
+</div>
+<div class="px-4 py-6 @container">
+<div class="overflow-x-auto rounded-lg border border-slate-800 bg-slate-900 shadow-lg">
+<table class="w-full text-left">
+<thead class="bg-slate-800">
+<tr>
+<th class="px-6 py-4 text-sm font-bold text-white uppercase tracking-wider text-center">Rank</th>
+<th class="px-6 py-4 text-sm font-bold text-white uppercase tracking-wider">User</th>
+<th class="px-6 py-4 text-sm font-bold text-white uppercase tracking-wider text-right">Score</th>
+<th class="px-6 py-4 text-sm font-bold text-white uppercase tracking-wider text-right">Accuracy</th>
+<th class="px-6 py-4 text-sm font-bold text-white uppercase tracking-wider text-right">Time</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-800">
+<tr class="hover:bg-slate-800/50 transition-colors group">
+<td class="px-6 py-4 whitespace-nowrap text-center">
+<div class="flex items-center justify-center">
+<span class="text-2xl font-bold text-amber-400">1</span>
+<span class="material-symbols-outlined text-amber-400 text-3xl">emoji_events</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfKtJX8j_Bpce_b0PQJLQ8IMqJzEPvYIhisIacggFEXVCUcwh8gMOVt8tYf_8OwCj2O-mr7eNRoF7ZfkxEdTaFkBBnlc5Olv693bGvoiYko1a4U3Cfqpcbt4nJDUVLQ80C_a6WpD-IGgCcjEsrSTrOTFwbEcP6OQ3NHb-7fLDWRVpdvrIFzsy-IyBX2pxjGdD9_TgIoUkG92Zm_ta5kfegRYyjYoN-uTkDi14_C9L2N0CN_OK9PDhu4gfJZYq-SoQoa-5pGIzjrufi')"></div>
+<span class="font-medium text-white">Sophia Clark</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right font-semibold text-[#13a4ec]">950</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">98%</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">25s</td>
+</tr>
+<tr class="hover:bg-slate-800/50 transition-colors group">
+<td class="px-6 py-4 whitespace-nowrap text-center">
+<div class="flex items-center justify-center">
+<span class="text-xl font-bold text-slate-400">2</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfKtJX8j_Bpce_b0PQJLQ8IMqJzEPvYIhisIacggFEXVCUcwh8gMOVt8tYf_8OwCj2O-mr7eNRoF7ZfkxEdTaFkBBnlc5Olv693bGvoiYko1a4U3Cfqpcbt4nJDUVLQ80C_a6WpD-IGgCcjEsrSTrOTFwbEcP6OQ3NHb-7fLDWRVpdvrIFzsy-IyBX2pxjGdD9_TgIoUkG92Zm_ta5kfegRYyjYoN-uTkDi14_C9L2N0CN_OK9PDhu4gfJZYq-SoQoa-5pGIzjrufi')"></div>
+<span class="font-medium text-white">Ethan Walker</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right font-semibold text-[#13a4ec]">920</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">95%</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">28s</td>
+</tr>
+<tr class="hover:bg-slate-800/50 transition-colors group">
+<td class="px-6 py-4 whitespace-nowrap text-center">
+<div class="flex items-center justify-center">
+<span class="text-xl font-bold text-slate-400">3</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfKtJX8j_Bpce_b0PQJLQ8IMqJzEPvYIhisIacggFEXVCUcwh8gMOVt8tYf_8OwCj2O-mr7eNRoF7ZfkxEdTaFkBBnlc5Olv693bGvoiYko1a4U3Cfqpcbt4nJDUVLQ80C_a6WpD-IGgCcjEsrSTrOTFwbEcP6OQ3NHb-7fLDWRVpdvrIFzsy-IyBX2pxjGdD9_TgIoUkG92Zm_ta5kfegRYyjYoN-uTkDi14_C9L2N0CN_OK9PDhu4gfJZYq-SoQoa-5pGIzjrufi')"></div>
+<span class="font-medium text-white">Olivia Reed</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right font-semibold text-[#13a4ec]">900</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">97%</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">30s</td>
+</tr>
+<tr class="hover:bg-slate-800/50 transition-colors group">
+<td class="px-6 py-4 whitespace-nowrap text-center text-lg font-semibold text-slate-400">4</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfKtJX8j_Bpce_b0PQJLQ8IMqJzEPvYIhisIacggFEXVCUcwh8gMOVt8tYf_8OwCj2O-mr7eNRoF7ZfkxEdTaFkBBnlc5Olv693bGvoiYko1a4U3Cfqpcbt4nJDUVLQ80C_a6WpD-IGgCcjEsrSTrOTFwbEcP6OQ3NHb-7fLDWRVpdvrIFzsy-IyBX2pxjGdD9_TgIoUkG92Zm_ta5kfegRYyjYoN-uTkDi14_C9L2N0CN_OK9PDhu4gfJZYq-SoQoa-5pGIzjrufi')"></div>
+<span class="font-medium text-white">Noah Bennett</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right font-semibold text-[#13a4ec]">880</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">96%</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">32s</td>
+</tr>
+<tr class="hover:bg-slate-800/50 transition-colors group">
+<td class="px-6 py-4 whitespace-nowrap text-center text-lg font-semibold text-slate-400">5</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfKtJX8j_Bpce_b0PQJLQ8IMqJzEPvYIhisIacggFEXVCUcwh8gMOVt8tYf_8OwCj2O-mr7eNRoF7ZfkxEdTaFkBBnlc5Olv693bGvoiYko1a4U3Cfqpcbt4nJDUVLQ80C_a6WpD-IGgCcjEsrSTrOTFwbEcP6OQ3NHb-7fLDWRVpdvrIFzsy-IyBX2pxjGdD9_TgIoUkG92Zm_ta5kfegRYyjYoN-uTkDi14_C9L2N0CN_OK9PDhu4gfJZYq-SoQoa-5pGIzjrufi')"></div>
+<span class="font-medium text-white">Ava Carter</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right font-semibold text-[#13a4ec]">850</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">94%</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">35s</td>
+</tr>
+<tr class="hover:bg-slate-800/50 transition-colors group">
+<td class="px-6 py-4 whitespace-nowrap text-center text-lg font-semibold text-slate-400">6</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfKtJX8j_Bpce_b0PQJLQ8IMqJzEPvYIhisIacggFEXVCUcwh8gMOVt8tYf_8OwCj2O-mr7eNRoF7ZfkxEdTaFkBBnlc5Olv693bGvoiYko1a4U3Cfqpcbt4nJDUVLQ80C_a6WpD-IGgCcjEsrSTrOTFwbEcP6OQ3NHb-7fLDWRVpdvrIFzsy-IyBX2pxjGdD9_TgIoUkG92Zm_ta5kfegRYyjYoN-uTkDi14_C9L2N0CN_OK9PDhu4gfJZYq-SoQoa-5pGIzjrufi')"></div>
+<span class="font-medium text-white">Liam Hayes</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right font-semibold text-[#13a4ec]">820</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">93%</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">38s</td>
+</tr>
+<tr class="hover:bg-slate-800/50 transition-colors group">
+<td class="px-6 py-4 whitespace-nowrap text-center text-lg font-semibold text-slate-400">7</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfKtJX8j_Bpce_b0PQJLQ8IMqJzEPvYIhisIacggFEXVCUcwh8gMOVt8tYf_8OwCj2O-mr7eNRoF7ZfkxEdTaFkBBnlc5Olv693bGvoiYko1a4U3Cfqpcbt4nJDUVLQ80C_a6WpD-IGgCcjEsrSTrOTFwbEcP6OQ3NHb-7fLDWRVpdvrIFzsy-IyBX2pxjGdD9_TgIoUkG92Zm_ta5kfegRYyjYoN-uTkDi14_C9L2N0CN_OK9PDhu4gfJZYq-SoQoa-5pGIzjrufi')"></div>
+<span class="font-medium text-white">Isabella Foster</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right font-semibold text-[#13a4ec]">800</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">92%</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">40s</td>
+</tr>
+<tr class="hover:bg-slate-800/50 transition-colors group">
+<td class="px-6 py-4 whitespace-nowrap text-center text-lg font-semibold text-slate-400">8</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfKtJX8j_Bpce_b0PQJLQ8IMqJzEPvYIhisIacggFEXVCUcwh8gMOVt8tYf_8OwCj2O-mr7eNRoF7ZfkxEdTaFkBBnlc5Olv693bGvoiYko1a4U3Cfqpcbt4nJDUVLQ80C_a6WpD-IGgCcjEsrSTrOTFwbEcP6OQ3NHb-7fLDWRVpdvrIFzsy-IyBX2pxjGdD9_TgIoUkG92Zm_ta5kfegRYyjYoN-uTkDi14_C9L2N0CN_OK9PDhu4gfJZYq-SoQoa-5pGIzjrufi')"></div>
+<span class="font-medium text-white">Jackson Cole</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right font-semibold text-[#13a4ec]">780</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">91%</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">42s</td>
+</tr>
+<tr class="hover:bg-slate-800/50 transition-colors group">
+<td class="px-6 py-4 whitespace-nowrap text-center text-lg font-semibold text-slate-400">9</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfKtJX8j_Bpce_b0PQJLQ8IMqJzEPvYIhisIacggFEXVCUcwh8gMOVt8tYf_8OwCj2O-mr7eNRoF7ZfkxEdTaFkBBnlc5Olv693bGvoiYko1a4U3Cfqpcbt4nJDUVLQ80C_a6WpD-IGgCcjEsrSTrOTFwbEcP6OQ3NHb-7fLDWRVpdvrIFzsy-IyBX2pxjGdD9_TgIoUkG92Zm_ta5kfegRYyjYoN-uTkDi14_C9L2N0CN_OK9PDhu4gfJZYq-SoQoa-5pGIzjrufi')"></div>
+<span class="font-medium text-white">Mia Brooks</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right font-semibold text-[#13a4ec]">750</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">90%</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">45s</td>
+</tr>
+<tr class="hover:bg-slate-800/50 transition-colors group">
+<td class="px-6 py-4 whitespace-nowrap text-center text-lg font-semibold text-slate-400">10</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfKtJX8j_Bpce_b0PQJLQ8IMqJzEPvYIhisIacggFEXVCUcwh8gMOVt8tYf_8OwCj2O-mr7eNRoF7ZfkxEdTaFkBBnlc5Olv693bGvoiYko1a4U3Cfqpcbt4nJDUVLQ80C_a6WpD-IGgCcjEsrSTrOTFwbEcP6OQ3NHb-7fLDWRVpdvrIFzsy-IyBX2pxjGdD9_TgIoUkG92Zm_ta5kfegRYyjYoN-uTkDi14_C9L2N0CN_OK9PDhu4gfJZYq-SoQoa-5pGIzjrufi')"></div>
+<span class="font-medium text-white">Lucas Gray</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right font-semibold text-[#13a4ec]">720</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">89%</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-slate-300">48s</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>

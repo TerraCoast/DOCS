@@ -1,0 +1,92 @@
+<html><head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>GeoQuiz Game</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<meta charset="utf-8"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="bg-slate-100" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-slate-200 px-10 py-3 bg-white">
+<div class="flex items-center gap-4 text-slate-800">
+<div class="w-8 h-8 text-sky-500">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 text-xl font-bold tracking-tight">GeoQuiz</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 hover:text-sky-500 text-sm font-medium transition-colors" href="#">Home</a>
+<a class="text-slate-600 hover:text-sky-500 text-sm font-medium transition-colors" href="#">Competitive</a>
+<a class="text-slate-600 hover:text-sky-500 text-sm font-medium transition-colors" href="#">Duel</a>
+<a class="text-slate-600 hover:text-sky-500 text-sm font-medium transition-colors" href="#">Leaderboard</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYu2wFhN2K0rPqxq0KDK7Uvym1e6AA3wOr5wTqcKm170KDKUDZ10y0kCdgd65xk3jJOkDgaG3q0XSXb1g39vzn8_y38KmS4FCXDmKe6VY_FbNZJwzqn96hUJbwVmXu7VnY2Ad_eXZaqqFeZHKaAyQekZ5E05AAgXtUOMOeMqYLl3gwvYGVYk7Yvzx1pTowo3F9nG2-OTC9-Y2Xpk_VLSksqvRd0lBil3gRfOQkl_xOHQb-E5PdjRpbgCtzUlVwKoua4KvCTocHNLP7");'></div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-12 px-4">
+<div class="w-full max-w-2xl bg-white rounded-2xl shadow-lg p-8 space-y-8">
+<div class="space-y-2">
+<div class="flex justify-between items-center">
+<p class="text-slate-600 text-sm font-medium">Question 5/10</p>
+<div class="flex items-center gap-2 text-slate-600">
+<span class="material-symbols-outlined text-xl">timer</span>
+<p class="text-sm font-medium">00:30</p>
+</div>
+</div>
+<div class="w-full bg-slate-200 rounded-full h-2.5">
+<div class="bg-sky-500 h-2.5 rounded-full" style="width: 50%;"></div>
+</div>
+</div>
+<h2 class="text-slate-900 text-3xl font-bold text-center">What is the capital of France?</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<button class="group flex items-center justify-start w-full text-left p-4 rounded-lg border border-slate-200 hover:bg-slate-100 hover:border-sky-500 transition-all duration-300">
+<div class="w-8 h-8 rounded-md bg-slate-200 text-slate-600 flex items-center justify-center font-bold text-sm mr-4 group-hover:bg-sky-100 group-hover:text-sky-600">A</div>
+<span class="text-slate-700 font-medium group-hover:text-slate-900">Paris</span>
+</button>
+<button class="group flex items-center justify-start w-full text-left p-4 rounded-lg border border-slate-200 hover:bg-slate-100 hover:border-sky-500 transition-all duration-300">
+<div class="w-8 h-8 rounded-md bg-slate-200 text-slate-600 flex items-center justify-center font-bold text-sm mr-4 group-hover:bg-sky-100 group-hover:text-sky-600">B</div>
+<span class="text-slate-700 font-medium group-hover:text-slate-900">London</span>
+</button>
+<button class="group flex items-center justify-start w-full text-left p-4 rounded-lg border border-slate-200 hover:bg-slate-100 hover:border-sky-500 transition-all duration-300">
+<div class="w-8 h-8 rounded-md bg-slate-200 text-slate-600 flex items-center justify-center font-bold text-sm mr-4 group-hover:bg-sky-100 group-hover:text-sky-600">C</div>
+<span class="text-slate-700 font-medium group-hover:text-slate-900">Berlin</span>
+</button>
+<button class="group flex items-center justify-start w-full text-left p-4 rounded-lg border border-slate-200 hover:bg-slate-100 hover:border-sky-500 transition-all duration-300">
+<div class="w-8 h-8 rounded-md bg-slate-200 text-slate-600 flex items-center justify-center font-bold text-sm mr-4 group-hover:bg-sky-100 group-hover:text-sky-600">D</div>
+<span class="text-slate-700 font-medium group-hover:text-slate-900">Madrid</span>
+</button>
+</div>
+<div class="flex justify-center pt-4">
+<button class="flex min-w-[120px] items-center justify-center rounded-lg h-12 px-6 bg-sky-500 text-white text-base font-bold hover:bg-sky-600 transition-colors shadow-md hover:shadow-lg">
+<span>Submit</span>
+</button>
+</div>
+<div class="border-2 border-green-500 bg-green-50 rounded-lg p-4 flex items-center gap-4 hidden">
+<span class="material-symbols-outlined text-green-600 text-3xl">check_circle</span>
+<div>
+<h3 class="font-bold text-green-800">Correct!</h3>
+<p class="text-green-700 text-sm">Paris is the capital of France.</p>
+</div>
+</div>
+<div class="border-2 border-red-500 bg-red-50 rounded-lg p-4 flex items-center gap-4 hidden">
+<span class="material-symbols-outlined text-red-600 text-3xl">cancel</span>
+<div>
+<h3 class="font-bold text-red-800">Incorrect!</h3>
+<p class="text-red-700 text-sm">The correct answer was Paris.</p>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

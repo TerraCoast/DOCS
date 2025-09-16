@@ -1,0 +1,127 @@
+<html><head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<meta charset="utf-8"/>
+</head>
+<body class="bg-slate-50 text-slate-900" style="font-family: 'Space Grotesk', 'Noto Sans', sans-serif;">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 px-10 py-4">
+<div class="flex items-center gap-3 text-slate-900">
+<span class="material-symbols-outlined text-3xl text-sky-500">public</span>
+<h2 class="text-xl font-bold tracking-tight">GeoQuiz</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+<a class="hover:text-sky-500 transition-colors" href="#">Home</a>
+<a class="hover:text-sky-500 transition-colors" href="#">Quizzes</a>
+<a class="hover:text-sky-500 transition-colors" href="#">Leaderboard</a>
+<a class="hover:text-sky-500 transition-colors" href="#">Profile</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-slate-100 hover:bg-slate-200 transition-colors">
+<span class="material-symbols-outlined text-slate-600">settings</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBW60XwDP7lv1HiUB14wvm2MwhAwmNSR4_yUBd_kUVtCv7IFKCngkZDjooOnyORvmBULAiaQygWq6ggrRFuTEBh0_6mrEP7S-SCmLtG7RVL-To7SgRlgfnHQ3mXIRjF-wPf3owFjq_QTPWQASthEbSr29_hQw3UCNyZyJ-Xt_Cuw9thJOdJK53Lcrih7KlPGevznXyE294sHUjVRUYHdRptEKIiJIkgEyJdWdjjtc5IQMcBI23Xn9SDvnVErTzYGZwe9JwAUU_qyaWZ");'></div>
+</div>
+</header>
+<main class="flex-1 px-4 sm:px-6 lg:px-8 py-12">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
+<div class="lg:col-span-1 space-y-8">
+<div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+<h3 class="text-xl font-bold mb-4 tracking-tight">Quiz Configuration</h3>
+<div class="space-y-4">
+<div>
+<label class="block text-sm font-medium text-slate-700 mb-1.5" for="difficulty">Difficulty</label>
+<select class="form-select w-full rounded-md border-slate-300 focus:border-sky-500 focus:ring-sky-500 transition" id="difficulty">
+<option>Easy</option>
+<option>Medium</option>
+<option>Hard</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 mb-1.5" for="questions">Number of Questions</label>
+<select class="form-select w-full rounded-md border-slate-300 focus:border-sky-500 focus:ring-sky-500 transition" id="questions">
+<option>10</option>
+<option>20</option>
+<option>30</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 mb-1.5" for="time-limit">Time Limit</label>
+<select class="form-select w-full rounded-md border-slate-300 focus:border-sky-500 focus:ring-sky-500 transition" id="time-limit">
+<option>No Time Limit</option>
+<option>1 minute</option>
+<option>2 minutes</option>
+<option>5 minutes</option>
+</select>
+</div>
+</div>
+<button class="w-full mt-6 flex items-center justify-center gap-2 rounded-md bg-sky-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition">
+<span class="material-symbols-outlined">play_arrow</span>
+                  Start Quiz
+                </button>
+</div>
+</div>
+<div class="lg:col-span-2">
+<div class="mb-8">
+<h1 class="text-4xl font-bold tracking-tighter">World Capitals Quiz</h1>
+<p class="text-slate-500 mt-2 text-lg">Test your knowledge of capital cities around the globe. Can you beat the top scores?</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+<h3 class="text-xl font-bold mb-4 tracking-tight">Best Scores</h3>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="border-b border-slate-200">
+<th class="p-3 text-sm font-semibold text-slate-600">Rank</th>
+<th class="p-3 text-sm font-semibold text-slate-600">Player</th>
+<th class="p-3 text-sm font-semibold text-slate-600 text-right">Score</th>
+<th class="p-3 text-sm font-semibold text-slate-600 text-right">Time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-slate-200 hover:bg-slate-50">
+<td class="p-3 font-medium">1</td>
+<td class="p-3 font-medium">Ethan Harper</td>
+<td class="p-3 text-slate-500 text-right">100</td>
+<td class="p-3 text-slate-500 text-right">00:55</td>
+</tr>
+<tr class="border-b border-slate-200 hover:bg-slate-50">
+<td class="p-3 font-medium">2</td>
+<td class="p-3 font-medium">Olivia Bennett</td>
+<td class="p-3 text-slate-500 text-right">95</td>
+<td class="p-3 text-slate-500 text-right">01:02</td>
+</tr>
+<tr class="border-b border-slate-200 hover:bg-slate-50">
+<td class="p-3 font-medium">3</td>
+<td class="p-3 font-medium">Noah Carter</td>
+<td class="p-3 text-slate-500 text-right">90</td>
+<td class="p-3 text-slate-500 text-right">01:15</td>
+</tr>
+<tr class="border-b border-slate-200 hover:bg-slate-50">
+<td class="p-3 font-medium">4</td>
+<td class="p-3 font-medium">Ava Mitchell</td>
+<td class="p-3 text-slate-500 text-right">85</td>
+<td class="p-3 text-slate-500 text-right">01:20</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="p-3 font-medium">5</td>
+<td class="p-3 font-medium">Liam Foster</td>
+<td class="p-3 text-slate-500 text-right">80</td>
+<td class="p-3 text-slate-500 text-right">01:30</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
