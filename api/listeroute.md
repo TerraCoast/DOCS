@@ -127,17 +127,6 @@
 
 ***
 
-## Notifications (sur site)
-
-- **GET** /notifications  
-  Liste notifications de l’utilisateur connecté  
-- **PATCH** /notifications/:id/read  
-  Marquer notification lue  
-- **DELETE** /notifications/:id  
-  Supprimer notification
-
-***
-
 ## Administration (dashboard)
 
 - **GET** /admin/users  
@@ -212,11 +201,6 @@ Cette liste de routes couvre toutes les fonctionnalités nécessaires à l’app
 - GET /leaderboard/friends — classement amis
 - POST /leaderboard — poster score
 - GET /leaderboard/:quizId — classement quiz spécifique
-
-## Notifications (site)
-- GET /notifications — lister notifications utilisateur
-- PATCH /notifications/:id/read — marquer lue
-- DELETE /notifications/:id — supprimer notification
 
 ## Administration
 - GET /admin/users — liste utilisateurs (admin)
